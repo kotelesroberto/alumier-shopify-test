@@ -16,7 +16,7 @@ After all the system generated the templated Shopify store (that is available un
 
 ### 2\. step: Download the specific theme from Shopify.
 
-On the shopify admin dashboard, next tothe name of the current theme (Dawn) open the 3 dots menu and select "Donwload theme file". It generates a ZIP file that is downloadable to localhost.
+On the shopify admin dashboard, next to the name of the current theme (Dawn) open the 3 dots menu and select "Donwload theme file". It generates a ZIP file that is downloadable to localhost.
 
 ### 3\. step: Create a VITE project locally:
 
@@ -38,3 +38,17 @@ Type and run:
 `git branch -M main`  
 `git remote add origin git@github.com:kotelesroberto/alumier-shopify-test.git`  
 `git push -u origin main`
+
+### 6\. Add this line to main-product.liquid file, wherever we want to see the ON SALE badge:
+
+`{% render 'onsale-badge'`  
+`block: block,`  
+`product: product,`  
+`variant: product.selected_or_first_available_variant,`  
+`%}`
+
+7\. Add Theme from GitHub
+
+For doing this the Shopify store should be connected to the GitHub. Go to the Themes, click on the **Add Theme** button and select **Connect from GitHub**.
+
+<table><tbody><tr><td>GitHub</td><td>https://github.com/kotelesroberto</td></tr><tr><td>Repository</td><td>alumier-shopify-test</td></tr></tbody></table>
