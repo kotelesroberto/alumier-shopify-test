@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        couner: "src/main.tsx",
+        "onsale-badge": "src/onsale-badge/main.tsx",
       },
       output: {
         dir: "../assets",

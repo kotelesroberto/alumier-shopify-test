@@ -2,7 +2,7 @@
 
 This solution belongs to Alumier.
 
-I decided to make the tasks done on my localhost and I used Shopify CLI for doing the job done. VITE is a recommended framework that supports React / Typescript.
+I decided to make the tasks done on my localhost and I used Shopify CLI for doing the job done. VITE is a recommended development tool that supports React / Typescript.
 
 ## Steps
 

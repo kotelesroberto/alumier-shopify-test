@@ -1,0 +1,16 @@
+{% if template.name == 'product' %}
+    
+    {%- if product and product != empty -%}
+        <div id="onsale-badge-root"></div>
+        <div id="onsale-badge">
+            {% if variant.compare_at_price != null %}
+                <span class="badge highlighted">On Sale Now!</span>
+            {% endif %}
+        </div>
+        
+        <link rel="stylesheet" href="{{ 'vite-onsale-badge.css' | asset_url }}">
+        <script type="module" src="{{ 'vite-onsale-badge.js' | asset_url }}" defer></script>
+    {% endif %}
+{% endif %}
+
+
